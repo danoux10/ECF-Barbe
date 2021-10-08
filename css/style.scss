@@ -1,0 +1,23 @@
+.valid{
+  background: #008800;
+  transition: all ease .5s;
+}
+
+.valid:hover{
+  background: none;
+  border: 2px solid #055e00;
+  color: #008800;
+  transition: all ease .5s;
+}
+
+
+#navbar{
+  a:hover{
+    border-bottom: 2px solid #008800;
+    transition: all ease .2s;
+  }
+}
+
+.user{
+  
+}
