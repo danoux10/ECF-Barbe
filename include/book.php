@@ -13,13 +13,13 @@
         if ($statu == 0) {
           echo "<div class='flex flex-col items-center ml-1 mr-1'>";
             echo "<button type='submit' name='book[]' value='$id'>";
-              echo "<img src='../$cover' title='$title' class='w-28 h-40 rounded-br-lg rounded-tr-lg filter grayscale'>";
+              echo "<img src='../$cover' title='$title' class='rounded-br-lg rounded-tr-lg filter grayscale lg:w-28 lg:h-40 md:h-30'>";
             echo "</button>";
           echo"</div>";
         }else{
           echo "<div class='flex flex-col items-center ml-1 mr-1'>";
             echo "<button type='submit'  name='book[]' value='$id'>";
-              echo "<img src='../$cover' title='$title' class='w-28 h-40 rounded-br-lg rounded-tr-lg'>";
+              echo "<img src='../$cover' title='$title' class='rounded-br-lg rounded-tr-lg lg:w-28 lg:h-40 md:h-30'>";
             echo "</button>";
           echo"</div>";
         }
@@ -35,13 +35,13 @@
         if ($statu == 0) {
           echo "<div class='flex flex-col items-center ml-1 mr-1'>";
             echo "<button type='submit' name='book[]' value='$id'>";
-              echo "<img src='../$cover' title='$title' class='w-28 h-40 rounded-br-lg rounded-tr-lg filter grayscale'>";
+              echo "<img src='../$cover' title='$title' class='rounded-br-lg rounded-tr-lg filter grayscale lg:w-28 lg:h-40 md:h-30'>";
             echo "</button>";
           echo"</div>";
         }else{
           echo "<div class='flex flex-col items-center ml-1 mr-1'>";
             echo "<button type='submit'  name='book[]' value='$id'>";
-              echo "<img src='../$cover' title='$title' class='w-28 h-40 rounded-br-lg rounded-tr-lg'>";
+              echo "<img src='../$cover' title='$title' class='rounded-br-lg rounded-tr-lg lg:w-28 lg:h-40 md:h-30'>";
             echo "</button>";
           echo"</div>";
         }
@@ -57,13 +57,13 @@
       if ($statu == 0) {
         echo "<div class='flex flex-col items-center ml-1 mr-1'>";
           echo "<button type='submit' name='book[]' value='$id'>";
-            echo "<img src='../$cover' title='$title' class='w-28 h-40 rounded-br-lg rounded-tr-lg filter grayscale'>";
+            echo "<img src='../$cover' title='$title' class='rounded-br-lg rounded-tr-lg filter grayscale lg:w-28 lg:h-40 md:h-30'>";
           echo "</button>";
         echo"</div>";
       }else{
         echo "<div class='flex flex-col items-center ml-1 mr-1'>";
           echo "<button type='submit'  name='book[]' value='$id'>";
-            echo "<img src='../$cover' title='$title' class='w-28 h-40 rounded-br-lg rounded-tr-lg'>";
+            echo "<img src='../$cover' title='$title' class='rounded-br-lg rounded-tr-lg lg:w-28 lg:h-40 md:h-30'>";
           echo "</button>";
         echo"</div>";
       } 

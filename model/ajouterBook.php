@@ -9,13 +9,12 @@
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-  <form method="POST" enctype="multipart/form-data" class="flex justify-center content-center items-center mt-64">
+  <form method="POST" enctype="multipart/form-data" class="flex justify-center content-center items-center lg:mt-64 md:mt-5 md:flex-col">
     <fieldset class="flex justify-center content-center flex-col border border-black rounded p-4">
       <legend class="text-center font-bold text-lg">Ajouter Livre</legend>
       <label for="titre" class="text-center">Titre</label>
       <input type="text" name="titre" id="titre" class="border rounded-sm border-black">
       
-      <label for="auteur" class="text-center mt-2">Auteur</label>
       <input type="text" name="auteur" id="auteur" class="border rounded-sm border-black">
       
       <label for="parution" class="text-center mt-2">Date de parution</label>

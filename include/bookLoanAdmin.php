@@ -33,7 +33,7 @@ if($user == 1 || $user == 2){
 
 
       if($Demand != null){
-        echo "<fieldset class='ml-2 border border-black w-1/4'>";
+        echo "<fieldset class='ml-2 border border-black lg:w-1/4 md:w-full'>";
         echo "<legend class='font-bold text-center'>".$title." </legend>";
         echo "<div class='flex justify-center align-center'>";
           echo "<div class='flex flex-col align-center justify-center mr-4'>";
@@ -46,7 +46,7 @@ if($user == 1 || $user == 2){
               echo "<h3>".$parution."</h3>";
             echo "</div>";
           echo "</div>";
-          echo "<img src='../$cover' class='w-2/5 rounded-br-lg rounded-tr-lg cover'/>";
+          echo "<img src='../$cover' class='lg:w-2/5 md:w-1/5 rounded-br-lg rounded-tr-lg cover'/>";
         echo "</div>";
         echo "<div class='flex justify-center align-center items-center flex-col'>";
           echo "<h3 class='underline'>Description :</h3>";
@@ -61,7 +61,7 @@ if($user == 1 || $user == 2){
       echo "</fieldset>";
       }
       if($Loan != null){
-        echo "<fieldset class='ml-2 border border-black w-1/4'>";
+        echo "<fieldset class='ml-2 border border-black lg:w-1/4 md:w-full'>";
         echo "<legend class='font-bold text-center'>".$title." </legend>";
         echo "<div class='flex justify-center align-center'>";
           echo "<div class='flex flex-col align-center justify-center mr-4'>";
@@ -74,7 +74,7 @@ if($user == 1 || $user == 2){
               echo "<h3>".$parution."</h3>";
             echo "</div>";
           echo "</div>";
-          echo "<img src='../$cover' class='w-2/5 rounded-br-lg rounded-tr-lg cover'/>";
+          echo "<img src='../$cover' class='lg:w-2/5 md:w-1/5 rounded-br-lg rounded-tr-lg cover'/>";
         echo "</div>";
         echo "<div class='flex justify-center align-center items-center flex-col'>";
           echo "<h3 class='underline'>Description :</h3>";
@@ -98,7 +98,7 @@ if($user == 1 || $user == 2){
     $emprunt = date("Y/m/d",time()+(1*1814400));
     $up = $bdd->prepare('UPDATE emprunt set demand=null , endDemand=null , loan =?, endLoan=? WHERE id_loan='.$save.'');
     $up -> execute([$today,$emprunt]);  
-    echo $today.'--'.$emprunt;  
+    // echo $today.'--'.$emprunt;  
   }
 
   if(isset($retour)){

@@ -15,10 +15,12 @@
   
   <div class="flex justify-center mt-9">
     <form action="" method="post" class="w-8/12 mr-9">
-      <div class="flex">
-        <fieldset class="border border-black w-4/5 grid grid-cols-9 gap-2">
+      <div class="flex lg:flex-row md:flex-col">
+        <fieldset class="border border-black lg:w-4/5 md:w-full ">
           <legend class="font-bold">Emprunter</legend>
-          <?php include '../include/bookLoan.php'; ?>
+          <div class="grid lg:grid-cols-10 lg:gap-3 md:grid-cols-5 md:gap-1">
+            <?php include '../include/bookLoan.php'; ?>
+          </div>
         </fieldset>
         <?php include'../include/bookLoanAdmin.php'; ?>
       </div>

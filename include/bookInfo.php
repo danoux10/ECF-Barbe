@@ -2,7 +2,7 @@
         @ $bookChoose = $_POST['book'];
         if(isset($bookChoose)){
           $choose = implode($bookChoose);
-          echo $choose;
+          // echo $choose;
           $infoBook = $bdd->query('SELECT * FROM book INNER JOIN genre ON book.style=genre.id_genre WHERE book.id='.$choose.'');
           foreach($infoBook as $bookData){
             $id = $bookData['id'];
@@ -20,7 +20,7 @@
             $parution = $day.'/'.$month.'/'.$year;
 
             if($statu == 0){
-              echo "<fieldset class='ml-2 border border-black w-1/4'>";
+              echo "<fieldset class='ml-2 border border-black lg:w-1/4 md:w-full'>";
               echo "<legend class='font-bold text-center'>".$title." </legend>";
               echo "<div class='flex justify-center align-center'>";
                 echo "<div class='flex flex-col align-center justify-center mr-4'>";
@@ -37,16 +37,16 @@
                     echo "<h3>".$genre."</h3>";
                   echo "</div>";
                 echo "</div>";
-                echo "<img src='../$cover' class='w-2/5 rounded-br-lg rounded-tr-lg cover'/>";
+                echo "<img src='../$cover' class='lg:w-2/5 md:w-1/5 rounded-br-lg rounded-tr-lg cover'/>";
               echo "</div>";
               echo "<div class='flex justify-center align-center items-center flex-col'>";
                 echo "<h3 class='underline'>Description :</h3>";
-                echo "<p class='overflow-scroll h-96 w-5/6'>".$info."</p>";
+                echo "<p class='overflow-scroll lg:h-96 md:h-52 w-5/6'>".$info."</p>";
                 echo "<button type='disabled' class='emprunter font-bold text-white border-2 mt-3 rounded p-0.5' value='$id' name=''>Déjà emprunter</button>";
               echo "</div>";
             echo "</fieldset>";
             }else{
-              echo "<fieldset class='ml-2 border border-black w-1/4'>";
+              echo "<fieldset class='ml-2 border border-black lg:w-1/4 md:w-full'>";
               echo "<legend class='font-bold'>".$title." </legend>";
               echo "<div class='flex justify-center align-center'>";
                 echo "<div class='flex flex-col align-center justify-center mr-4'>";
@@ -63,11 +63,11 @@
                     echo "<h3>".$genre."</h3>";
                   echo "</div>";
                 echo "</div>";
-                echo "<img src='../$cover' class='w-2/5 rounded-br-lg rounded-tr-lg cover'/>";
+                echo "<img src='../$cover' class='lg:w-2/5 md:w-1/5 rounded-br-lg rounded-tr-lg cover'/>";
               echo "</div>";
               echo "<div class='flex justify-center align-center items-center flex-col'>";
                 echo "<h3 class='underline'>Description :</h3>";
-                echo "<p class='overflow-scroll h-96 w-5/6'>".$info."</p>";
+                echo "<p class='overflow-scroll lg:h-96 md:h-52 w-5/6'>".$info."</p>";
                 echo "<button type='submit' class='valid font-bold text-white border-2 mt-3 rounded p-0.5' value='$id' name='loan'>Emprunter</button>";
               echo "</div>";
             echo "</fieldset>";

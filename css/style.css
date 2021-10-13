@@ -26,4 +26,10 @@
 table, tr, td {
   border: 1px solid black;
 }
+
+@media (min-width: 768px) {
+  .miniature {
+    border: 5px solid pink;
+  }
+}
 /*# sourceMappingURL=style.css.map */

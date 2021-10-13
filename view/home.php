@@ -13,8 +13,8 @@
     include '../include/navbar.php';
    ?>
 
-  <div  class="flex justify-center items-center mt-24">
-    <img src="../image/book.svg" alt="book" class="">
+  <div  class="flex justify-center items-center mt-24 lg:w-auto md:w-1/2 md:mx-52">
+    <img src="../image/book.svg" alt="book">
   </div>
 </body>
 </html>
