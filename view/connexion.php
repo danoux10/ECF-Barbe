@@ -21,7 +21,7 @@
       $niveaux = $data['lvl'];
       $id = $data['id'];
 
-      echo $username.'<br>'.$pass.'<br>'.$statu.'<br>';
+      //echo $username.'<br>'.$pass.'<br>'.$statu.'<br>';
       if(password_verify($password,$pass)){
         if($statu == 1){
           if($recupUser -> rowCount()>0){
