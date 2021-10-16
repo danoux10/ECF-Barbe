@@ -11,7 +11,8 @@
     $password = htmlspecialchars($_POST['password']);
     $adress = htmlspecialchars($_POST['adress']);
     $bith = $_POST['birth'];
-    $pass = sha1($password);
+    // $pass = sha1($password);
+    $pass = password_hash($password,PASSWORD_BCRYPT);
 
     $inscri = $bdd ->prepare('INSERT INTO users SET firstname= ?,lastname= ?,username= ?,email= ?,pass= ?,adress= ?,birth= ?,lvl= 3,statu=false');
     $inscri ->execute([$firstname,$lastname,$username,$email,$pass,$adress,$bith]);
