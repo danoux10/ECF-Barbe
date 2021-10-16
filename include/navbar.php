@@ -1,6 +1,6 @@
 <?php 
   include '../config/bdd.php';
-  include_once 'auto-check.php';
+  include 'auto-check.php';
   session_start();
   @ $utilisateur = $_SESSION['niveaux'];
 ?>  
@@ -10,13 +10,15 @@
       <ul class="flex items-center justify-around">
         <?php if ($utilisateur == 1 || $utilisateur == 2  || $utilisateur == 3 ) { ?>
           <!-- desktop -->
-          <li class="pl-2 pr-2 ml-12 lg:block md:hidden"><a href="catalogue.php">Catalogue</a></li>
-          <li class="pl-2 pr-2 ml-12 lg:block md:hidden"><a href="viewLoan.php">Emprunter</a></li>
-          <li class="pl-2 pr-2 ml-12 order-last lg:block md:hidden"><a href="deco.php">Déconnexion</a></li>
+           <li class="pl-2 pr-2 ml-12 lg:block md:hidden"><a href="catalogue.php">Catalogue</a></li>
+           <li class="pl-2 pr-2 ml-12 lg:block md:hidden"><a href="viewLoan.php">Emprunter</a></li>
+           <li class="pl-2 pr-2 ml-12 order-last lg:block md:hidden"><a href="deco.php">Déconnexion</a></li>
           <!-- mobile -->
-          <li class="pl-2 pr-2 ml-12 lg:hidden md:block"><a href="catalogue.php"><img class="w-14" src="../image/book.svg"></a></li>
-          <li class="pl-2 pr-2 ml-12 lg:hidden md:block"><a href="viewLoan.php"><img class="w-14" src="../image/emprunt.svg" alt=""></a></li>
-          <li class="pl-2 pr-2 ml-12 order-last lg:hidden md:block"><a href="deco.php"><img class="w-14" src="../image/power.svg"></a></li>
+          <!-- <div class="lg:hidden md:block"> -->
+            <li class="pl-2 pr-2 ml-12 lg:hidden md:block"><a href="catalogue.php"><img class="w-14" src="../image/book.svg"></a></li>
+            <li class="pl-2 pr-2 ml-12 lg:hidden md:block"><a href="viewLoan.php"><img class="w-14" src="../image/emprunt.svg" alt=""></a></li>
+            <li class="pl-2 pr-2 ml-12 order-last lg:hidden md:block"><a href="deco.php"><img class="w-14" src="../image/power.svg"></a></li>
+          <!-- </div> -->
         <?php }else{?>
           <!-- desktop -->
           <li class="pl-2 pr-2 ml-12 lg:block md:hidden"><a href="home.php">Accueil</a></li>
