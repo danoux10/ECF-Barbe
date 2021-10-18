@@ -6,7 +6,7 @@
       foreach($genre as $data){
         $id=$data['id'];
         $nom=$data['nom'];?>
-        <option value="<?php echo $id?>"><?php echo $id?></option>
+        <option value="<?php echo $id?>"><?php echo $nom?></option>
       <?php } ?>
 </select>
  
