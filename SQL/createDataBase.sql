@@ -46,13 +46,3 @@ create table niveaux(
     id int(11) primary key  auto_increment,
     nom varchar(255) not null
 )
-
-insert into niveaux (nom) value ('admin');
-insert into niveaux (nom) value ('employer');
-insert into niveaux (nom) value ('user');
-
-insert into users (firstname, lastname, username, email, pass, adress, birth, lvl, statu) VALUE ('admin', 'admin', 'admin   admin','admin@admin.admin', '$2y$10$75b4HdDZBd.fkU.fTMKO.uNqmZI6.YxudvVImABNVL9lQJwxl3LDi', '1 rue de l''admin', '2001-01-01','1','0');
-insert into users (firstname, lastname, username, email, pass, adress, birth, lvl, statu) VALUE ('employer', 'employer', 'employer   employer','employer@employer.employer', '$2y$10$pCXmOV01LZTr98kaqfUzP.tQu0wtcWlOlRgGwz5mdu88K5wl4rS76', '1 rue de l''employer', '2001-01-01','2','0');
-insert into users (firstname, lastname, username, email, pass, adress, birth, lvl, statu) VALUE ('user', 'user', 'user   user','user@user.user', '$2y$10$nLWczLPc8dYfjKXFrixoN.Ns6Py9hTOYaHy1JoZfCmI44/OFiVmOq', '1 rue de l''utilisateur', '2001-01-01','3','0');
-
-

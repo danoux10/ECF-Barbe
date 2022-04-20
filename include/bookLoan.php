@@ -52,7 +52,7 @@
     }
   }
   if($user == 1 || $user==2){
-    $bookView = $bdd->query('SELECT * FROM emprunt INNER JOIN book ON emprunt.book=book.id');
+    $bookView = $bdd->query('SELECT * FROM emprunt INNER JOIN book ON emprunt.book=book.id ');
     foreach($bookView as $data){
       $title = $data['title'];
       $cover = $data['cover'];

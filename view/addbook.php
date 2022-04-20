@@ -2,6 +2,10 @@
   include '../include/navbar.php';
   include '../model/ajouterBook.php';
 
+  if($_SESSION['niveaux'] == 3 || $_SESSION['niveaux'] == 2 ){
+    header('location:home.php');
+  }
+
   if(isset($_POST['add-genre'])){
     $newgenre = htmlspecialchars($_POST['ajouter-genre']);
     $addgenre = $bdd->prepare('INSERT INTO genre set nom=?');
