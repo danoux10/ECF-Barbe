@@ -1,26 +1,22 @@
 .valid, .emprunter {
   background: #008800;
-  -webkit-transition: all ease .5s;
-  transition: all ease .5s;
+  transition: all ease 0.5s;
 }
 
 .valid:hover {
   background: none;
   border: 2px solid #055e00;
   color: #008800;
-  -webkit-transition: all ease .5s;
-  transition: all ease .5s;
+  transition: all ease 0.5s;
 }
 
 #navbar a:hover {
   border-bottom: 2px solid #008800;
-  -webkit-transition: all ease .2s;
-  transition: all ease .2s;
+  transition: all ease 0.2s;
 }
 
 .cover {
-  -webkit-box-shadow: 3px 3px 3px grey;
-          box-shadow: 3px 3px 3px grey;
+  box-shadow: 3px 3px 3px grey;
 }
 
 table, tr, td {
@@ -32,4 +28,5 @@ table, tr, td {
     border: 5px solid pink;
   }
 }
+
 /*# sourceMappingURL=style.css.map */

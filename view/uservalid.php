@@ -7,7 +7,8 @@
   <title>Valider Utilisateur</title>
   <link rel="stylesheet" href="../css/tailwind.css">
   <link rel="stylesheet" href="../css/style.css">
- 
+    <link rel="shortcut icon" href="../image/book.svg" type="image/x-icon">
+
 </head>
 <body>
   <?php
